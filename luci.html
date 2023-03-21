@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Luci festas</title>
+</head>
+<body>
+    <header >
+        <div class="container">
+            <img src="img/luci.png" width="200" height="100" >
+        </div>
+    </header>
+    <section class="container">
+    <table id="tabela5" class="table table-hover">
+        <thead>
+            <tr class="eventos">
+                <td>Nome do evento</td>
+                <td>Data</td>
+                <td>Hora</td>
+                <td>Local</td>
+                <td>Numero de convidados</td>
+                <td>Status de pagamento</td>
+            </tr>
+        </thead>
+        <tbody id="tabela">
+            <tr class="eventos">
+                <td class="info-nomeEvento">Aniversario</td>
+                <td class="info-data">2023-10-05</td>
+                <td class="info-hora">10:30</td>
+                <td class="info-local">Luci buffet</td>
+                <td class="info-quantidade">50</td>
+                <td class="info-status">pago</td>
+            </tr>
+            <tr class="eventos">
+                <td class="info-nomeEvento">Confraternização</td>
+                <td class="info-data">2023-12-05</td>
+                <td class="info-hora">11:30</td>
+                <td class="info-local">Luci Salão de festa 2</td>
+                <td class="info-quantidade">45</td>
+                <td class="info-status">não pago</td>
+            </tr>
+            <tr class="eventos">
+                <td class="info-nomeEvento">Formatura</td>
+                <td class="info-data">2023-12-15</td>
+                <td class="info-hora">10:30</td>
+                <td class="info-local">Luci Salão 1</td>
+                <td class="info-quantidade">250</td>
+                <td class="info-status">pago</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section id="tabela1" class="container">
+        <h2 id="titulo-form">Agende seu evento</h2>
+        <div class="box" >
+        <ul id="mensagens-erro"></ul>
+        </div>
+        <br>
+        <form id="form-adiciona">
+            <div class="mb-3">
+                <label for="nomeEvento" class="form-label">Nome do evento:</label>
+                <input id="nomeEvento" name="nomeEvento" type="text" class="form-control" placeholder="Nome do evento">
+              </div>
+
+            <div class="mb-3">
+                <label for="local" class="form-label">Local do evento:</label>
+                <input id="local" name="local" type="text" class="form-control"  placeholder="Local do evento">
+              </div>
+
+            <div class="row">
+                <div class="col">
+                    <label for="data" class="form-label">Data do evento:</label>
+                    <input id="data" name="data" type="date" class="form-control" placeholder="Data" aria-label="First name">
+                </div>
+                
+                <div class="col">
+                    <label for="hora" class="form-label">Hora do evento:</label>
+                    <input id="hora" name="hora" type="time" class="form-control" placeholder="Hora" aria-label="First name">
+                </div>
+
+                <div class="col">
+                    <label for="quantidade" class="form-label">Numero de pessoas:</label>
+                    <input id="quantidade" name="quantidade" type="number" class="form-control" placeholder="Numero de pessoas" aria-label="First name">
+                </div>
+
+                <div class="col">
+                    <label for="status" class="form-label">status de pagamento:</label>
+                    <input id="status" name="status" type="text" class="form-control" placeholder="status de pagamento" aria-label="First name">
+                </div>
+              </div>
+              <br>
+            <div class="d-grid gap-2">
+                <button id="add-evento" class="btn btn-primary" type="button">Adicionar</button>
+            </div>
+        </form>
+<br>
+        <div id="totalEvento" class="box1">
+            <h2>Total de eventos: </h2>
+            <h2 class="total" id="total">1</h2>
+        </div>
+  
+    </section>
+
+
+
+
+
+    <script src="js/form.js"></script>
+    <script src="js/remover.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
